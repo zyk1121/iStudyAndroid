@@ -1,9 +1,7 @@
 package com.example.zhangyuanke.istudyandroid.FCUI;
 
 import android.app.Activity;
-import android.app.AlertDialog;
-import android.app.ProgressDialog;
-import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -58,6 +56,9 @@ public class FCUIActivity extends Activity implements View.OnClickListener {
 
     public void onBtnClick(View view)
     {
+        Intent intent = new Intent(FCUIActivity.this,FCUIListViewActivity.class);
+        startActivity(intent);
+        /*
         Toast.makeText(FCUIActivity.this,"点击了按钮3",Toast.LENGTH_SHORT).show();
         imageView.setImageResource(R.drawable.banana_pic);
         if (progressBar.getVisibility() == View.GONE) {
@@ -91,5 +92,6 @@ public class FCUIActivity extends Activity implements View.OnClickListener {
         progressDialog.setMessage("Loading...");
         progressDialog.setCancelable(true);
         progressDialog.show();
+        */
     }
 }

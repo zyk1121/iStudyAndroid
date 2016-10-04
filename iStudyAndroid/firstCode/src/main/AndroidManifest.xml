@@ -15,7 +15,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FCUI.FCUIActivity"></activity>
+        <activity android:name=".FCUI.FCUIActivity" />
+        <activity android:name=".FCUI.FCUIListViewActivity"></activity>
     </application>
 
 </manifest>
