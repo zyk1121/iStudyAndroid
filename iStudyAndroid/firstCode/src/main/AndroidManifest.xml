@@ -16,7 +16,15 @@
             </intent-filter>
         </activity>
         <activity android:name=".FCUI.FCUIActivity" />
-        <activity android:name=".FCUI.FCUIListViewActivity"></activity>
+        <activity android:name=".FCUI.FCUIListViewActivity" />
+        <activity android:name=".FCActivity.FCActivityActivity" />
+        <activity android:name=".FCActivity.FCActivityLifeCycle">
+            <intent-filter>
+                <action android:name="com.example.zhangyuanke.istudyandroid.lifecycle" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.example.zhangyuanke.istudyandroid.mycategory"/>
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

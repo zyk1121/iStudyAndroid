@@ -10,12 +10,13 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.example.zhangyuanke.istudyandroid.BaseActivity;
 import com.example.zhangyuanke.istudyandroid.R;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class FCUIListViewActivity extends Activity {
+public class FCUIListViewActivity extends BaseActivity {
 
     public static final int UPDATE_DATA = 0x101;
     private ListView listView;

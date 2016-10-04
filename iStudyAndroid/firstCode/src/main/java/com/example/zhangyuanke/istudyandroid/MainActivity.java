@@ -4,14 +4,16 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.example.zhangyuanke.istudyandroid.FCActivity.FCActivityActivity;
 import com.example.zhangyuanke.istudyandroid.FCUI.FCUIActivity;
 
 // 第一行代码 Android数据示例demo学习
-public class MainActivity extends Activity {
+public class MainActivity extends BaseActivity {
 
     private String[] data = {
             "1.Android UI",
@@ -73,6 +75,12 @@ public class MainActivity extends Activity {
                 intent = new Intent(MainActivity.this,FCUIActivity.class);
                 break;
             case 1:
+                // Activity
+                intent = new Intent(MainActivity.this,FCActivityActivity.class);
+                break;
+            case 2:
+                // Service
+//                intent = new Intent(MainActivity.this,FCActivityActivity.class);
                 break;
             default:
                 break;

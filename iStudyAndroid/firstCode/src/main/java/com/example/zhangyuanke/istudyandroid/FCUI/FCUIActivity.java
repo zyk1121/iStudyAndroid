@@ -9,9 +9,10 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.example.zhangyuanke.istudyandroid.BaseActivity;
 import com.example.zhangyuanke.istudyandroid.R;
 
-public class FCUIActivity extends Activity implements View.OnClickListener {
+public class FCUIActivity extends BaseActivity implements View.OnClickListener {
 
     private Button button1;
     private ImageView imageView;
