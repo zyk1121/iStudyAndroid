@@ -8,10 +8,12 @@ package com.example.zhangyuanke.istudyandroid.FCUI;
 public class FCUIFruit {
     private String name;
     private int imageId;
+    public boolean selected;
 
     public FCUIFruit(String name, int imageId) {
         this.name = name;
         this.imageId = imageId;
+        this.selected = false;
     }
     public String getName()
     {

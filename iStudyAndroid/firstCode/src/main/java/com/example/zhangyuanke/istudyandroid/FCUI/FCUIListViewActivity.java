@@ -5,14 +5,15 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.example.zhangyuanke.istudyandroid.R;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Timer;
-import java.util.TimerTask;
 
 public class FCUIListViewActivity extends Activity {
 
@@ -32,6 +33,18 @@ public class FCUIListViewActivity extends Activity {
         listView = (ListView)findViewById(R.id.fruit_list_view);
         FCUIFruitAdapter adapter = new FCUIFruitAdapter(FCUIListViewActivity.this,R.layout.fruit_item_layout,fruitList);
         listView.setAdapter(adapter);
+
+        // listview点击后不响应的解决办法:
+        /*
+        * 在ListView子项目布局文件中的根控件中添加
+android:descendantFocusability="blocksDescendants"
+        * */
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Toast.makeText(FCUIListViewActivity.this,""+i,Toast.LENGTH_SHORT).show();
+            }
+        });
 
         // 延时方式1
 //        new Thread(new Runnable(){
@@ -132,14 +145,23 @@ public class FCUIListViewActivity extends Activity {
     private void updateData()
     {
 
-        FCUIFruit Pear2 = new FCUIFruit("Pear",R.drawable.pear_pic);
-        fruitList.add(Pear2);
-        FCUIFruit Grape2 = new FCUIFruit("grape",R.drawable.grape_pic);
-        fruitList.add(Grape2);
-        FCUIFruit Pineapple2 = new FCUIFruit("peneapple",R.drawable.pineapple_pic);
-        fruitList.add(Pineapple2);
-        FCUIFruit Strawberry2 = new FCUIFruit("strawverry",R.drawable.strawberry_pic);
-        fruitList.add(Strawberry2);
+        FCUIFruit apple = new FCUIFruit("apple",R.drawable.apple_pic);
+        fruitList.add(apple);
+        FCUIFruit banana = new FCUIFruit("banana",R.drawable.banana_pic);
+        fruitList.add(banana);
+        FCUIFruit Orange = new FCUIFruit("orange",R.drawable.orange_pic);
+        fruitList.add(Orange);
+        FCUIFruit Watermelon = new FCUIFruit("watermelon",R.drawable.watermelon_pic);
+        fruitList.add(Watermelon);
+
+        FCUIFruit Pear = new FCUIFruit("Pear",R.drawable.pear_pic);
+        fruitList.add(Pear);
+        FCUIFruit Grape = new FCUIFruit("grape",R.drawable.grape_pic);
+        fruitList.add(Grape);
+        FCUIFruit Pineapple = new FCUIFruit("peneapple",R.drawable.pineapple_pic);
+        fruitList.add(Pineapple);
+        FCUIFruit Strawberry = new FCUIFruit("strawverry",R.drawable.strawberry_pic);
+        fruitList.add(Strawberry);
 
 //        Log.v("puny","initfruits" + Thread.currentThread().getId() + "   " + fruitList.size());
 //        listView.getAdapter().notify();

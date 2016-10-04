@@ -2,10 +2,12 @@ package com.example.zhangyuanke.istudyandroid.FCUI;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -32,15 +34,43 @@ public class FCUIFruitAdapter extends ArrayAdapter<FCUIFruit> {
 
     @NonNull
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(final int position, View convertView, ViewGroup parent) {
 
-        FCUIFruit fruit = getItem(position);
-        View view = LayoutInflater.from(getContext()).inflate(resourceId,null);
-        ImageView fruitImage = (ImageView)view.findViewById(R.id.fruit_image);
-        TextView fruitName = (TextView) view.findViewById(R.id.fruit_name);
-        fruitImage.setImageResource(fruit.getImageId());
-        fruitName.setText(fruit.getName());
+        final FCUIFruit fruit = getItem(position);
+        View view;
+        ViewHolder viewHolder;
+        if (convertView == null) {
+            view = LayoutInflater.from(getContext()).inflate(resourceId,null);
+            viewHolder = new ViewHolder();
+            viewHolder.fruitImage = (ImageView)view.findViewById(R.id.fruit_image);
+            viewHolder.fruitName = (TextView) view.findViewById(R.id.fruit_name);
+            viewHolder.checkBox = (CheckBox)view.findViewById(R.id.fruit_checkbox);
+            view.setTag(viewHolder);
+        } else {
+            view = convertView;
+            viewHolder = (ViewHolder)view.getTag();
+        }
+
+        viewHolder.checkBox.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.v("puny",""+position + fruit.selected);
+                fruit.selected = !fruit.selected;
+            }
+        });
+
+//        ImageView fruitImage = (ImageView)view.findViewById(R.id.fruit_image);
+//        TextView fruitName = (TextView) view.findViewById(R.id.fruit_name);
+        viewHolder.fruitImage.setImageResource(fruit.getImageId());
+        viewHolder.fruitName.setText(fruit.getName());
+        viewHolder.checkBox.setChecked(fruit.selected);
 
         return view;
+    }
+    class ViewHolder
+    {
+        ImageView fruitImage;
+        TextView fruitName;
+        CheckBox checkBox;
     }
 }
