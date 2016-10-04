@@ -16,6 +16,7 @@ import android.widget.Toast;
 
 import com.example.zhangyuanke.istudyandroid.ActivityManager;
 import com.example.zhangyuanke.istudyandroid.BaseActivity;
+import com.example.zhangyuanke.istudyandroid.LogUtil;
 import com.example.zhangyuanke.istudyandroid.R;
 
 import java.net.URI;
@@ -31,6 +32,7 @@ public class FCActivityActivity extends BaseActivity {
             "6.活动的启动模式",
             "7.保存Activity数据",
             "8.随时随地退出程序",
+            "9.返回栈id",
     };
 
     @Override
@@ -118,6 +120,11 @@ public class FCActivityActivity extends BaseActivity {
 //                Log.v("puny",ActivityManager.currentActivity().toString());
                 ActivityManager.finishAll();
                 break;
+            case 8:
+//                LogUtil.v("puny","task id is:"+getTaskId());
+                Toast.makeText(this,"task id is:"+getTaskId(),Toast.LENGTH_SHORT).show();
+                break;
+
             default:
                 break;
         }
