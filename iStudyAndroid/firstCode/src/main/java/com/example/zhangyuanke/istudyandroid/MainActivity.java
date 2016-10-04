@@ -2,13 +2,13 @@ package com.example.zhangyuanke.istudyandroid;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
+import com.example.zhangyuanke.istudyandroid.FCUI.FCUIActivity;
 
 // 第一行代码 Android数据示例demo学习
 public class MainActivity extends Activity {
