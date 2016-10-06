@@ -16,6 +16,8 @@ import android.widget.Toast;
 
 import com.example.zhangyuanke.istudyandroid.ActivityManager;
 import com.example.zhangyuanke.istudyandroid.BaseActivity;
+import com.example.zhangyuanke.istudyandroid.FCUI.FCUIChatMessageActivity;
+import com.example.zhangyuanke.istudyandroid.FCUI.FCUILayoutActivity;
 import com.example.zhangyuanke.istudyandroid.LogUtil;
 import com.example.zhangyuanke.istudyandroid.R;
 
@@ -33,6 +35,8 @@ public class FCActivityActivity extends BaseActivity {
             "7.保存Activity数据",
             "8.随时随地退出程序",
             "9.返回栈id",
+            "10.四种基本布局",
+            "11.聊天界面UI布局",
     };
 
     @Override
@@ -123,6 +127,14 @@ public class FCActivityActivity extends BaseActivity {
             case 8:
 //                LogUtil.v("puny","task id is:"+getTaskId());
                 Toast.makeText(this,"task id is:"+getTaskId(),Toast.LENGTH_SHORT).show();
+                break;
+            case 9:
+                intent = new Intent(FCActivityActivity.this,FCUILayoutActivity.class);
+                startActivity(intent);
+                break;
+            case 10:
+                intent = new Intent(FCActivityActivity.this,FCUIChatMessageActivity.class);
+                startActivity(intent);
                 break;
 
             default:

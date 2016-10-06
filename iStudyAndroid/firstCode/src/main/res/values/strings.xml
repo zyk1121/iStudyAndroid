@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">iStudyAndroid</string>
+    <string name="title_activity_fcuilayout">FCUILayoutActivity</string>
 </resources>

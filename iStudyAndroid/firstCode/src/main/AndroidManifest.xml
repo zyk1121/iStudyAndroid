@@ -21,10 +21,13 @@
         <activity android:name=".FCActivity.FCActivityLifeCycle">
             <intent-filter>
                 <action android:name="com.example.zhangyuanke.istudyandroid.lifecycle" />
+
                 <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="com.example.zhangyuanke.istudyandroid.mycategory"/>
+                <category android:name="com.example.zhangyuanke.istudyandroid.mycategory" />
             </intent-filter>
         </activity>
+        <activity android:name=".FCUI.FCUILayoutActivity" />
+        <activity android:name=".FCUI.FCUIChatMessageActivity"></activity>
     </application>
 
 </manifest>

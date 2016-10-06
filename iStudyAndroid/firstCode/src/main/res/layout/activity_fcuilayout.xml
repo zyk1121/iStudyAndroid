@@ -1,0 +1,272 @@
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:id="@+id/activity_fclife_cycle"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:paddingBottom="@dimen/activity_vertical_margin"-->
+    <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+    <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+    <!--android:paddingTop="@dimen/activity_vertical_margin"-->
+    <!--tools:context="com.example.zhangyuanke.istudyandroid.FCActivity.FCActivityLifeCycle"-->
+    <!--android:orientation="horizontal">-->
+
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textColor="#ff0000"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textSize="30sp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="测试线性布局"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textColor="#ff0000"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textSize="30sp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="测试线性布局测试线性布局"/>&ndash;&gt;-->
+
+
+    <!--&lt;!&ndash;<Button&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_gravity="top"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="button1"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<Button&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_gravity="center"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="button2"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<Button&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_gravity="bottom"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="button3"/>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<EditText&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:hint="type something here"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<Button&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="send"/>&ndash;&gt;-->
+
+    <!--<EditText-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:hint="type something here"/>-->
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="send"/>-->
+
+<!--</LinearLayout>-->
+
+
+
+
+
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:tools="http://schemas.android.com/tools"-->
+<!--android:id="@+id/activity_fclife_cycle"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--tools:context="com.example.zhangyuanke.istudyandroid.FCActivity.FCActivityLifeCycle">-->
+
+    <!--&lt;!&ndash;<Button&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_alignParentLeft="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_alignParentTop="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="button1"/>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<Button&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_alignParentRight="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_alignParentTop="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="button2"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<Button&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_centerInParent="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="button3"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<Button&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_alignParentLeft="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_alignParentBottom="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="button4"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<Button&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_alignParentRight="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_alignParentBottom="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="button5"/>&ndash;&gt;-->
+
+
+    <!--&lt;!&ndash;<Button&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/button_test_3"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_centerInParent="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="button3"/>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<Button&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/button_test_1"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_above="@id/button_test_3"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_toLeftOf="@id/button_test_3"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="button1"/>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<Button&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/button_test_2"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_above="@id/button_test_3"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_toRightOf="@id/button_test_3"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="button2"/>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<Button&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/button_test_4"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_below="@id/button_test_3"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_toLeftOf="@id/button_test_3"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="button4"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<Button&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/button_test_5"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_below="@id/button_test_3"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_toRightOf="@id/button_test_3"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="button5"/>&ndash;&gt;-->
+
+    <!--<Button-->
+        <!--android:id="@+id/button_test_3"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:text="button3"/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/button_test_1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_above="@id/button_test_3"-->
+        <!--android:layout_alignLeft="@id/button_test_3"-->
+        <!--android:text="button1444444444"/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/button_test_2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/button_test_3"-->
+        <!--android:layout_alignRight="@id/button_test_3"-->
+        <!--android:text="button2888888888888"/>-->
+    <!---->
+
+<!--</RelativeLayout>-->
+
+
+<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:id="@+id/activity_fclife_cycle"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--tools:context="com.example.zhangyuanke.istudyandroid.FCActivity.FCActivityLifeCycle">-->
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Button"/>-->
+
+    <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/apple_pic"/>-->
+
+<!--</FrameLayout>-->
+
+<!--<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:id="@+id/activity_fclife_cycle"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--tools:context="com.example.zhangyuanke.istudyandroid.FCActivity.FCActivityLifeCycle">-->
+
+    <!--<TableRow>-->
+        <!--<TextView-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Account:"-->
+            <!--/>-->
+        <!--<EditText-->
+            <!--android:id="@+id/account_test_ui"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:hint="input your account"-->
+            <!--/>-->
+    <!--</TableRow>-->
+    <!--<TableRow>-->
+        <!--<TextView-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Password:"-->
+            <!--/>-->
+        <!--<EditText-->
+            <!--android:id="@+id/password_test_ui"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:hint="type your password"-->
+            <!--/>-->
+    <!--</TableRow>-->
+    <!--<TableRow>-->
+        <!--<Button-->
+            <!--android:id="@+id/login_test_ui"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_span="2"-->
+            <!--android:text="Login"/>-->
+    <!--</TableRow>-->
+
+<!--</TableLayout>-->
+
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_fclife_cycle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    tools:context="com.example.zhangyuanke.istudyandroid.FCActivity.FCActivityLifeCycle">
+
+    <TableRow>
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="Account:"
+            />
+        <EditText
+            android:id="@+id/account_test_ui"
+            android:layout_height="wrap_content"
+            android:hint="input your account"
+            />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="Password:"
+            />
+        <EditText
+            android:id="@+id/password_test_ui"
+            android:layout_height="wrap_content"
+            android:hint="type your password"
+            />
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/login_test_ui"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:text="Login"/>
+    </TableRow>
+
+</TableLayout>
