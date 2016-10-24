@@ -27,7 +27,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".FCUI.FCUILayoutActivity" />
-        <activity android:name=".FCUI.FCUIChatMessageActivity"></activity>
+        <activity android:name=".FCUI.FCUIChatMessageActivity" />
+        <activity
+            android:name=".FCFragment.FCFragmentActivity"
+            android:label="@string/title_activity_fcfragment"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".FCFragment.FCFragmentTestACtivity"></activity>
     </application>
 
 </manifest>
