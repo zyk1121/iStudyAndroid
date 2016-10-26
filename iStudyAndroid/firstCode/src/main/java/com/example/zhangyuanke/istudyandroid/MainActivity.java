@@ -10,7 +10,10 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.example.zhangyuanke.istudyandroid.FCActivity.FCActivityActivity;
+import com.example.zhangyuanke.istudyandroid.FCBroadcastReceiver.FCBroadcastReceiverActivity;
+import com.example.zhangyuanke.istudyandroid.FCContentProvider.FCContentProviderActivity;
 import com.example.zhangyuanke.istudyandroid.FCFragment.FCFragmentActivity;
+import com.example.zhangyuanke.istudyandroid.FCService.FCServiceActivity;
 import com.example.zhangyuanke.istudyandroid.FCUI.FCUIActivity;
 
 // 第一行代码 Android数据示例demo学习
@@ -81,15 +84,15 @@ public class MainActivity extends BaseActivity {
                 break;
             case 2:
                 // Service
-//                intent = new Intent(MainActivity.this,FCActivityActivity.class);
+                intent = new Intent(MainActivity.this,FCServiceActivity.class);
                 break;
             case 3:
                 // BroadcastReceiver
-//                intent = new Intent(MainActivity.this,FCActivityActivity.class);
+                intent = new Intent(MainActivity.this,FCBroadcastReceiverActivity.class);
                 break;
             case 4:
                 // ContentProvider
-//                intent = new Intent(MainActivity.this,FCActivityActivity.class);
+                intent = new Intent(MainActivity.this,FCContentProviderActivity.class);
                 break;
             case 5:
                 // Fragment
