@@ -41,7 +41,7 @@
         <activity android:name=".FCFragment.FCFragmentTestACtivity" />
         <activity android:name=".FCBroadcastReceiver.FCBroadcastReceiverActivity" />
 
-        <receiver android:name=".BootCompleteReceiver">
+        <receiver android:name="BootCompleteReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <!-- <action android:name="android.intent.action.REBOOT"/> -->
@@ -55,6 +55,19 @@
 
         <activity android:name=".FCContentProvider.FCContentProviderActivity" />
         <activity android:name=".FCService.FCServiceActivity"></activity>
+
+        <service android:name=".FCService.FCMyService">
+        </service>
+        <service android:name=".FCService.FCMyIntentService"></service>
+
+        <service android:name=".FCService.FCLongRunningService"></service>
+        <receiver android:name=".FCService.FCAlermReceiver"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="ELITOR_CLOCK" />
+            </intent-filter>
+        </receiver>
+
     </application>
 
 </manifest>
