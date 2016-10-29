@@ -12,6 +12,7 @@ import android.widget.ListView;
 import com.example.zhangyuanke.istudyandroid.FCActivity.FCActivityActivity;
 import com.example.zhangyuanke.istudyandroid.FCBroadcastReceiver.FCBroadcastReceiverActivity;
 import com.example.zhangyuanke.istudyandroid.FCContentProvider.FCContentProviderActivity;
+import com.example.zhangyuanke.istudyandroid.FCDataStroage.FCDataStorageActivity;
 import com.example.zhangyuanke.istudyandroid.FCFragment.FCFragmentActivity;
 import com.example.zhangyuanke.istudyandroid.FCService.FCServiceActivity;
 import com.example.zhangyuanke.istudyandroid.FCUI.FCUIActivity;
@@ -97,6 +98,10 @@ public class MainActivity extends BaseActivity {
             case 5:
                 // Fragment
                 intent = new Intent(MainActivity.this,FCFragmentActivity.class);
+                break;
+            case 6:
+                // Data Storage
+                intent = new Intent(MainActivity.this,FCDataStorageActivity.class);
                 break;
             default:
                 break;
