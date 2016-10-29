@@ -7,6 +7,11 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -56,7 +61,7 @@
         <activity android:name=".FCContentProvider.FCContentProviderActivity" />
         <activity android:name=".FCService.FCServiceActivity" />
 
-        <service android:name=".FCService.FCMyService"></service>
+        <service android:name=".FCService.FCMyService" />
         <service android:name=".FCService.FCMyIntentService" />
         <service android:name=".FCService.FCLongRunningService" />
 
@@ -68,7 +73,9 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name=".FCDataStroage.FCDataStorageActivity"></activity>
+        <activity android:name=".FCDataStroage.FCDataStorageActivity" />
+        <activity android:name=".FCMultiMedia.FCMultiMediaActivity" />
+        <activity android:name=".FCMultiMedia.FCNotificationActivity"></activity>
     </application>
 
 </manifest>
