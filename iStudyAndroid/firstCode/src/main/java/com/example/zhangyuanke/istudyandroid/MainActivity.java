@@ -14,8 +14,10 @@ import com.example.zhangyuanke.istudyandroid.FCBroadcastReceiver.FCBroadcastRece
 import com.example.zhangyuanke.istudyandroid.FCContentProvider.FCContentProviderActivity;
 import com.example.zhangyuanke.istudyandroid.FCDataStroage.FCDataStorageActivity;
 import com.example.zhangyuanke.istudyandroid.FCFragment.FCFragmentActivity;
+import com.example.zhangyuanke.istudyandroid.FCGPS.FCGPSActivity;
 import com.example.zhangyuanke.istudyandroid.FCHttp.FCHttpActivity;
 import com.example.zhangyuanke.istudyandroid.FCMultiMedia.FCMultiMediaActivity;
+import com.example.zhangyuanke.istudyandroid.FCSensor.FCSensorActivity;
 import com.example.zhangyuanke.istudyandroid.FCService.FCServiceActivity;
 import com.example.zhangyuanke.istudyandroid.FCUI.FCUIActivity;
 
@@ -116,6 +118,10 @@ public class MainActivity extends BaseActivity {
                 intent = new Intent(MainActivity.this,FCMultiMediaActivity.class);
                 break;
             case 10:
+                intent = new Intent(MainActivity.this,FCSensorActivity.class);
+                break;
+            case 11:
+                intent = new Intent(MainActivity.this,FCGPSActivity.class);
                 break;
             default:
                 break;

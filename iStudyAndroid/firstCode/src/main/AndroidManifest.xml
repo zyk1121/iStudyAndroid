@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.zhangyuanke.istudyandroid">
     // 访问网络权限
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     // 静态注册实现开启启动
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
@@ -12,8 +13,18 @@
     <uses-permission android:name="android.permission.READ_SMS" />
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
 
+    <meta-data
+        android:name="com.leador.apikey"
+        android:value="请输入您的用户Key"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -78,7 +89,9 @@
         <activity android:name=".FCMultiMedia.FCMultiMediaActivity" />
         <activity android:name=".FCMultiMedia.FCNotificationActivity" />
         <activity android:name=".FCHttp.FCHttpActivity" />
-        <activity android:name=".FCHttp.FCHttpWebviewActivity"></activity>
+        <activity android:name=".FCHttp.FCHttpWebviewActivity" />
+        <activity android:name=".FCSensor.FCSensorActivity" />
+        <activity android:name=".FCGPS.FCGPSActivity"></activity>
     </application>
 
 </manifest>
