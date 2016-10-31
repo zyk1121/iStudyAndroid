@@ -64,7 +64,34 @@ public class FCGPSActivity extends BaseActivity {
     }
 
 
+/*
+*
+* keytool  -list -keystore android.keystore
+输入密钥库口令:
 
+密钥库类型: JKS
+密钥库提供方: SUN
+
+您的密钥库包含 1 个条目
+
+android, 2016-10-31, PrivateKeyEntry,
+证书指纹 (SHA1): 58:CF:F1:47:E7:D2:81:6C:3C:4D:48:D1:01:DB:95:A2:06:C0:D7:25
+* */
+
+    /*
+    * keytool  -list -keystore debug.keystore
+    *
+    *
+输入密钥库口令:android
+
+密钥库类型: JKS
+密钥库提供方: SUN
+
+您的密钥库包含 1 个条目
+
+androiddebugkey, 2016-4-21, PrivateKeyEntry,
+证书指纹 (SHA1): 33:15:38:F9:AB:6B:10:35:6C:F8:66:9B:60:17:41:EA:4E:19:56:A0
+*/
     private MapView mapView = null;
     private MapController mapController;
     // mapView
@@ -76,7 +103,7 @@ public class FCGPSActivity extends BaseActivity {
         if (mapController == null) {
             mapController = mapView.getMap();
         }
-        mapController.setTrafficEnabled(true);
+//        mapController.setTrafficEnabled(true);
     }
 
     LocationListener locationListener = new LocationListener() {
