@@ -8,6 +8,7 @@ import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.example.zhangyuanke.istudyandroid.FCActivity.FCActivityActivity;
 import com.example.zhangyuanke.istudyandroid.FCBroadcastReceiver.FCBroadcastReceiverActivity;
@@ -122,6 +123,12 @@ public class MainActivity extends BaseActivity {
                 break;
             case 11:
                 intent = new Intent(MainActivity.this,FCGPSActivity.class);
+                break;
+            case 12:
+                 // 序列化
+                break;
+            case 13:
+                Toast.makeText(MyApplication.getContext(),"见MyApplication",Toast.LENGTH_SHORT).show();
                 break;
             default:
                 break;
