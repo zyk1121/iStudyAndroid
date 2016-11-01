@@ -37,6 +37,5 @@ dependencies {
     compile 'com.android.support:support-v4:23.4.0'
     testCompile 'junit:junit:4.12'
     compile files('libs/gson-2.2.4.jar')
-    compile files('src/main/jniLibs/Leador_BDadapSDK_V1.3.0_20160920.jar')
-    compile files('src/main/jniLibs/Leador_MapSDK_V1.2.0_20160922.jar')
+    compile files('libs/BaiduLBS_Android.jar')
 }

@@ -44,9 +44,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+        <!--<meta-data-->
+            <!--android:name="com.leador.apikey"-->
+            <!--android:value="60d7fc75e156053b051b28c684eb0bcb"/>-->
+
         <meta-data
-            android:name="com.leador.apikey"
-            android:value="60d7fc75e156053b051b28c684eb0bcb"/>
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="DD279b2a90afdf0ae7a3796787a0742e" />
 
         <activity android:name=".MainActivity">
             <intent-filter>

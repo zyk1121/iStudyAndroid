@@ -12,10 +12,10 @@ import android.support.v4.app.ActivityCompat;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.baidu.mapapi.SDKInitializer;
+import com.baidu.mapapi.map.MapView;
 import com.example.zhangyuanke.istudyandroid.BaseActivity;
 import com.example.zhangyuanke.istudyandroid.R;
-import com.leador.api.maps.MapController;
-import com.leador.api.maps.MapView;
 
 import java.util.List;
 
@@ -28,6 +28,9 @@ public class FCGPSActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        SDKInitializer.initialize(getApplicationContext());
+
         setContentView(R.layout.activity_fcgps);
 
         //
@@ -92,17 +95,15 @@ android, 2016-10-31, PrivateKeyEntry,
 androiddebugkey, 2016-4-21, PrivateKeyEntry,
 证书指纹 (SHA1): 33:15:38:F9:AB:6B:10:35:6C:F8:66:9B:60:17:41:EA:4E:19:56:A0
 */
+//    MapView
     private MapView mapView = null;
-    private MapController mapController;
     // mapView
     protected  void setupMapView(Bundle savedInstanceState)
     {
+        // 百度SDK集成:http://blog.csdn.net/syc000666/article/details/50756551
         mapView = (MapView)findViewById(R.id.fc_map_view);
-        mapView.onCreate(savedInstanceState);// 此方法必须重写
+//        mapView.onCreate(savedInstanceState);// 此方法必须重写
 
-        if (mapController == null) {
-            mapController = mapView.getMap();
-        }
 //        mapController.setTrafficEnabled(true);
     }
 
