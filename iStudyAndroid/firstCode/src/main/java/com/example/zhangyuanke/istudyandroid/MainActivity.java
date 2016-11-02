@@ -19,6 +19,9 @@ import com.example.zhangyuanke.istudyandroid.FCGPS.FCGPSActivity;
 import com.example.zhangyuanke.istudyandroid.FCHttp.FCHttpActivity;
 import com.example.zhangyuanke.istudyandroid.FCMultiMedia.FCMultiMediaActivity;
 import com.example.zhangyuanke.istudyandroid.FCSensor.FCSensorActivity;
+import com.example.zhangyuanke.istudyandroid.FCSerializable.FCPeoson;
+import com.example.zhangyuanke.istudyandroid.FCSerializable.FCPerson2;
+import com.example.zhangyuanke.istudyandroid.FCSerializable.FCSerializableActivity;
 import com.example.zhangyuanke.istudyandroid.FCService.FCServiceActivity;
 import com.example.zhangyuanke.istudyandroid.FCUI.FCUIActivity;
 
@@ -126,6 +129,7 @@ public class MainActivity extends BaseActivity {
                 break;
             case 12:
                  // 序列化
+                serializeTest();
                 break;
             case 13:
                 Toast.makeText(MyApplication.getContext(),"见MyApplication",Toast.LENGTH_SHORT).show();
@@ -136,5 +140,34 @@ public class MainActivity extends BaseActivity {
         if (intent != null) {
             startActivity(intent);
         }
+    }
+
+    //  序列化
+    private void serializeTest()
+    {
+        //简单数据
+//        Intent intent = new Intent(MainActivity.this,FCSerializableActivity.class);
+//        intent.putExtra("string_name","zyk");
+//        intent.putExtra("int_data",100);
+//        startActivity(intent);
+
+//        // Serializable方式传递对象
+//        Intent intent = new Intent(MainActivity.this,FCSerializableActivity.class);
+//        FCPeoson peoson = new FCPeoson();
+//        peoson.setName("cyy");
+//        peoson.setAge(23);
+//
+//        intent.putExtra("person_data",peoson);
+//        startActivity(intent);
+
+
+        // Parcelable方式传递对象
+        Intent intent = new Intent(MainActivity.this,FCSerializableActivity.class);
+        FCPerson2 peoson = new FCPerson2();
+        peoson.setName("cyy__haha");
+        peoson.setAge(25);
+
+        intent.putExtra("person_data",peoson);
+        startActivity(intent);
     }
 }
