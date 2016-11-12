@@ -116,7 +116,11 @@
         <activity android:name=".FCGPS.FCGPSActivity" />
         <activity android:name=".FCSerializable.FCSerializableActivity" />
         <activity android:name=".FCManualLayout.FCManualLayoutAcitvity" />
-        <activity android:name=".FCThirdPart.FCThirdPartActivity"></activity>
+        <activity android:name=".FCThirdPart.FCThirdPartActivity" />
+        <activity
+            android:name=".FCBitmap.FCBitmapActivity"
+            android:label="@string/title_activity_fcbitmap"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

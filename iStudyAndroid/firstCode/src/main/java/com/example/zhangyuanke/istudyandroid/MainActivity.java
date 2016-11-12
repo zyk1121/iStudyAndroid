@@ -11,6 +11,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.example.zhangyuanke.istudyandroid.FCActivity.FCActivityActivity;
+import com.example.zhangyuanke.istudyandroid.FCBitmap.FCBitmapActivity;
 import com.example.zhangyuanke.istudyandroid.FCBroadcastReceiver.FCBroadcastReceiverActivity;
 import com.example.zhangyuanke.istudyandroid.FCContentProvider.FCContentProviderActivity;
 import com.example.zhangyuanke.istudyandroid.FCDataStroage.FCDataStorageActivity;
@@ -146,6 +147,7 @@ public class MainActivity extends BaseActivity {
                 break;
             case 16:
                 // Bitmap
+                intent = new Intent(MainActivity.this, FCBitmapActivity.class);
                 break;
             case 17:
                 // 手势
