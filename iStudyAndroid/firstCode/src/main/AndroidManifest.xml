@@ -114,7 +114,8 @@
         <activity android:name=".FCHttp.FCHttpWebviewActivity" />
         <activity android:name=".FCSensor.FCSensorActivity" />
         <activity android:name=".FCGPS.FCGPSActivity" />
-        <activity android:name=".FCSerializable.FCSerializableActivity"></activity>
+        <activity android:name=".FCSerializable.FCSerializableActivity" />
+        <activity android:name=".FCManualLayout.FCManualLayoutAcitvity"></activity>
     </application>
 
 </manifest>

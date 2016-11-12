@@ -17,6 +17,7 @@ import com.example.zhangyuanke.istudyandroid.FCDataStroage.FCDataStorageActivity
 import com.example.zhangyuanke.istudyandroid.FCFragment.FCFragmentActivity;
 import com.example.zhangyuanke.istudyandroid.FCGPS.FCGPSActivity;
 import com.example.zhangyuanke.istudyandroid.FCHttp.FCHttpActivity;
+import com.example.zhangyuanke.istudyandroid.FCManualLayout.FCManualLayoutAcitvity;
 import com.example.zhangyuanke.istudyandroid.FCMultiMedia.FCMultiMediaActivity;
 import com.example.zhangyuanke.istudyandroid.FCSensor.FCSensorActivity;
 import com.example.zhangyuanke.istudyandroid.FCSerializable.FCPeoson;
@@ -43,11 +44,11 @@ public class MainActivity extends BaseActivity {
             "12.GPS",
             "13.高级之序列化",
             "14.高级之全局Context,日志工具",
-            "15.高级之自定义控件",
-            "16.高级之动画",
+            "15.高级之手动布局",
+            "16.高级之第三方库",
             "17.高级之手势",
-            "18.高级之自定义样式",
-            "19.高级之第三方库",
+            "18.高级之自定义控件",
+            "19.高级之动画",
             "20.高级之OpenGL",
             "21.高级之单元测试",
             "22.高级之JNI",
@@ -133,6 +134,40 @@ public class MainActivity extends BaseActivity {
                 break;
             case 13:
                 Toast.makeText(MyApplication.getContext(),"见MyApplication",Toast.LENGTH_SHORT).show();
+                break;
+            case 14:
+                // 手动布局
+                intent = new Intent(MainActivity.this,FCManualLayoutAcitvity.class);
+                break;
+            case 15:
+                // 第三方库
+                break;
+            case 16:
+                // 手势
+                break;
+            case 17:
+                // 自定义控件
+                break;
+            case 18:
+                // 动画
+                break;
+            case 19:
+                // OpenGL
+                break;
+            case 20:
+                // 单元测试
+                break;
+            case 21:
+                // JNI
+                break;
+            case 22:
+                // SDK开发
+                break;
+            case 23:
+                // 发布、混淆、分渠道打包
+                break;
+            case 24:
+                // 项目实战
                 break;
             default:
                 break;
