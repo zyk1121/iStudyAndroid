@@ -115,7 +115,8 @@
         <activity android:name=".FCSensor.FCSensorActivity" />
         <activity android:name=".FCGPS.FCGPSActivity" />
         <activity android:name=".FCSerializable.FCSerializableActivity" />
-        <activity android:name=".FCManualLayout.FCManualLayoutAcitvity"></activity>
+        <activity android:name=".FCManualLayout.FCManualLayoutAcitvity" />
+        <activity android:name=".FCThirdPart.FCThirdPartActivity"></activity>
     </application>
 
 </manifest>

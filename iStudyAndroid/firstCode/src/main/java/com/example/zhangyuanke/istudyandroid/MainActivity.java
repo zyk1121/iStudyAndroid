@@ -24,6 +24,7 @@ import com.example.zhangyuanke.istudyandroid.FCSerializable.FCPeoson;
 import com.example.zhangyuanke.istudyandroid.FCSerializable.FCPerson2;
 import com.example.zhangyuanke.istudyandroid.FCSerializable.FCSerializableActivity;
 import com.example.zhangyuanke.istudyandroid.FCService.FCServiceActivity;
+import com.example.zhangyuanke.istudyandroid.FCThirdPart.FCThirdPartActivity;
 import com.example.zhangyuanke.istudyandroid.FCUI.FCUIActivity;
 
 // 第一行代码 Android数据示例demo学习
@@ -46,8 +47,8 @@ public class MainActivity extends BaseActivity {
             "14.高级之全局Context,日志工具",
             "15.高级之手动布局",
             "16.高级之第三方库",
-            "17.高级之手势",
-            "18.高级之自定义控件",
+            "17.高级之Bitmap",
+            "18.高级之手势",
             "19.高级之动画",
             "20.高级之OpenGL",
             "21.高级之单元测试",
@@ -141,12 +142,13 @@ public class MainActivity extends BaseActivity {
                 break;
             case 15:
                 // 第三方库
+                intent = new Intent(MainActivity.this,FCThirdPartActivity.class);
                 break;
             case 16:
-                // 手势
+                // Bitmap
                 break;
             case 17:
-                // 自定义控件
+                // 手势
                 break;
             case 18:
                 // 动画

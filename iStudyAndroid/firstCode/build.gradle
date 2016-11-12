@@ -38,4 +38,9 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile files('libs/gson-2.2.4.jar')
     compile files('libs/BaiduLBS_Android.jar')
+    compile files('libs/fastjson-1.2.2.jar')
+    //    compile 'com.squareup.okio:okio:1.5.0'
+    //    compile 'com.squareup.okhttp:okhttp:2.4.0'
+    compile files('libs/okio-1.11.0.jar')
+    compile files('libs/universal-image-loader-1.9.1.jar')
 }
