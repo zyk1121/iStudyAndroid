@@ -18,6 +18,8 @@ import com.example.zhangyuanke.istudyandroid.FCDataStroage.FCDataStorageActivity
 import com.example.zhangyuanke.istudyandroid.FCFragment.FCFragmentActivity;
 import com.example.zhangyuanke.istudyandroid.FCGPS.FCGPSActivity;
 import com.example.zhangyuanke.istudyandroid.FCHttp.FCHttpActivity;
+import com.example.zhangyuanke.istudyandroid.FCJNI.FCJNIActivity;
+import com.example.zhangyuanke.istudyandroid.FCJar.FCJarActivity;
 import com.example.zhangyuanke.istudyandroid.FCManualLayout.FCManualLayoutAcitvity;
 import com.example.zhangyuanke.istudyandroid.FCMultiMedia.FCMultiMediaActivity;
 import com.example.zhangyuanke.istudyandroid.FCSensor.FCSensorActivity;
@@ -160,12 +162,15 @@ public class MainActivity extends BaseActivity {
                 break;
             case 20:
                 // 单元测试
+                Toast.makeText(MyApplication.getContext(),"单元测试",Toast.LENGTH_SHORT).show();
                 break;
             case 21:
                 // JNI
+                intent = new Intent(MainActivity.this, FCJNIActivity.class);
                 break;
             case 22:
                 // SDK开发
+                intent = new Intent(MainActivity.this, FCJarActivity.class);
                 break;
             case 23:
                 // 发布、混淆、分渠道打包
