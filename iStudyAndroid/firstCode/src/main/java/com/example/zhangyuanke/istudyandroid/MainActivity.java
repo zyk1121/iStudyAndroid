@@ -11,17 +11,20 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.example.zhangyuanke.istudyandroid.FCActivity.FCActivityActivity;
+import com.example.zhangyuanke.istudyandroid.FCAnimate.FCAnimateActivity;
 import com.example.zhangyuanke.istudyandroid.FCBitmap.FCBitmapActivity;
 import com.example.zhangyuanke.istudyandroid.FCBroadcastReceiver.FCBroadcastReceiverActivity;
 import com.example.zhangyuanke.istudyandroid.FCContentProvider.FCContentProviderActivity;
 import com.example.zhangyuanke.istudyandroid.FCDataStroage.FCDataStorageActivity;
 import com.example.zhangyuanke.istudyandroid.FCFragment.FCFragmentActivity;
 import com.example.zhangyuanke.istudyandroid.FCGPS.FCGPSActivity;
+import com.example.zhangyuanke.istudyandroid.FCGesture.FCGestureActivity;
 import com.example.zhangyuanke.istudyandroid.FCHttp.FCHttpActivity;
 import com.example.zhangyuanke.istudyandroid.FCJNI.FCJNIActivity;
 import com.example.zhangyuanke.istudyandroid.FCJar.FCJarActivity;
 import com.example.zhangyuanke.istudyandroid.FCManualLayout.FCManualLayoutAcitvity;
 import com.example.zhangyuanke.istudyandroid.FCMultiMedia.FCMultiMediaActivity;
+import com.example.zhangyuanke.istudyandroid.FCOpenGL.FCOpenGLActivity;
 import com.example.zhangyuanke.istudyandroid.FCSensor.FCSensorActivity;
 import com.example.zhangyuanke.istudyandroid.FCSerializable.FCPeoson;
 import com.example.zhangyuanke.istudyandroid.FCSerializable.FCPerson2;
@@ -153,12 +156,15 @@ public class MainActivity extends BaseActivity {
                 break;
             case 17:
                 // 手势
+                intent = new Intent(MainActivity.this, FCGestureActivity.class);
                 break;
             case 18:
                 // 动画
+                intent = new Intent(MainActivity.this, FCAnimateActivity.class);
                 break;
             case 19:
                 // OpenGL
+                intent = new Intent(MainActivity.this, FCOpenGLActivity.class);
                 break;
             case 20:
                 // 单元测试

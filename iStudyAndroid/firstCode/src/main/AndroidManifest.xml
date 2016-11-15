@@ -122,7 +122,10 @@
             android:label="@string/title_activity_fcbitmap"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".FCJNI.FCJNIActivity" />
-        <activity android:name=".FCJar.FCJarActivity"></activity>
+        <activity android:name=".FCJar.FCJarActivity" />
+        <activity android:name=".FCGesture.FCGestureActivity" />
+        <activity android:name=".FCAnimate.FCAnimateActivity" />
+        <activity android:name=".FCOpenGL.FCOpenGLActivity"></activity>
     </application>
 
 </manifest>
